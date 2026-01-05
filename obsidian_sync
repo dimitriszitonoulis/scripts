@@ -1,0 +1,12 @@
+#!/bin/sh
+OBSIDIAN_VAULT="~/Obsidian Vault/"
+
+if [[ -z "$1" ]]; then
+  OBSIDIAN_VAULT="$1"
+elif
+
+cd "$OBSIDIAN_VAULT"
+git pull
+git add *
+git commit -m "Synced"
+git push -u origin main
