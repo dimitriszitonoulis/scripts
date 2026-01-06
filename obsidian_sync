@@ -1,9 +1,9 @@
 #!/bin/sh
-OBSIDIAN_VAULT="~/Obsidian Vault/"
+OBSIDIAN_VAULT="$HOME/Obsidian Vault/"
 
-if [[ -z "$1" ]]; then
+if [[ -n "$1" ]]; then
   OBSIDIAN_VAULT="$1"
-elif
+fi
 
 cd "$OBSIDIAN_VAULT"
 git pull
